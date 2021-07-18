@@ -1,0 +1,11 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: lab-files
+upstream:
+  type: git
+  git:
+    commit: 89ae33dc9cf10ac777a845e0a5f2c691708151b2
+    repo: https://github.com/GoogleCloudPlatform/mlops-on-gcp
+    directory: workshops/mlep-qwiklabs/distributed-training-gke
+    ref: master
